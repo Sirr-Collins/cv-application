@@ -1,0 +1,101 @@
+.cv-preview {
+  position: relative;
+  width: 100%;
+  min-height: 0;
+  height: fit-content;
+
+  padding: 65px 60px 55px;
+
+  background: #ffffff;
+  border: 1px solid #e0e3e8;
+  border-radius: 5px;
+
+  box-shadow: 0 12px 35px rgb(30 41 59 / 8%);
+}
+
+.cv-preview::before {
+  content: "LIVE PREVIEW";
+
+  position: absolute;
+  top: 19px;
+  right: 22px;
+
+  color: #a17b42;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.preview-header {
+  text-align: center;
+  padding-bottom: 27px;
+  border-bottom: 2px solid var(--primary);
+}
+
+.preview-header h1 {
+  margin: 0 0 14px;
+  color: var(--primary);
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  font-weight: 800;
+  letter-spacing: -0.8px;
+  overflow-wrap: anywhere;
+}
+
+.preview-contact {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.preview-contact p {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.preview-section {
+  margin-top: 32px;
+}
+
+.preview-section h2 {
+  margin: 0 0 20px;
+  padding-bottom: 10px;
+
+  color: #9a733b;
+  border-bottom: 1px solid #d9dfe8;
+
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+
+.preview-section h3 {
+  margin: 0 0 8px;
+  color: #1e293b;
+  font-size: 1.05rem;
+  font-weight: 750;
+}
+
+.preview-section p {
+  margin: 7px 0;
+  color: #475569;
+  font-size: 0.92rem;
+  line-height: 1.7;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+  .cv-preview {
+    padding: 55px 25px 35px;
+  }
+
+  .preview-contact {
+    flex-direction: column;
+    gap: 7px;
+  }
+}
